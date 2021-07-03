@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/oneDay.css">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+</head>
+<body>
+    <div class="big-container">
+        <div class="title"><h2>Varanasi Tourism Services</h2></div>
+
+<!-- Top attraction page starts here... -->
+
+<div class="top-attraction">
+    <div class="favourite-place-card-container" style="cursor: pointer;">
+        <div style="margin-right:10px">
+            <h1 class="favourite-place-card-heading">Assi Ghat <input class="checkbox" type="checkbox" id="Assi" name="twoDay" value="Assi" checked> </h1>
+            <p class="favourite-place-card-description"   id="btn-1">
+                Assi Ghat's star attraction is a Shiva lingam (phallic representation of the Hindu deity) beneath a sacred fig tree
+            </p>
+        </div>
+        <img src="images/assighat.png" class="favourite-place-card-image" />
+    </div>
+    <div class="favourite-place-card-container" style="cursor: pointer;">
+        <div  style="margin-right:10px">
+            <h1 class="favourite-place-card-heading">Manikarnika Ghat <input class="checkbox" type="checkbox" id="Manikarnika" name="twoDay" value="Manikarnika" checked> </h1>
+            <p class="favourite-place-card-description"   id="btn-2">
+                Hindus believe that Manikarnika Ghat is one of the most auspicious places for the departed to reach moksha (emancipation from the cycle of spiritual rebirth)
+            </p>
+        </div>
+        <img src="images/manikarnika.png" class="favourite-place-card-image" />
+    </div >
+    <div class="favourite-place-card-container" style="cursor: pointer;" id="btn-3">
+        <div style="margin-right:10px">
+            <h1 class="favourite-place-card-heading">Shri Kashi Vishwanath Temple  <input class="checkbox" type="checkbox" id="Kashi" name="twoDay" value="Kashi" checked></h1>
+            <p class="favourite-place-card-description">
+                The impressive structure, dedicated to the Hindu deity Shiva, has earned the nickname "The Golden Temple" for its striking spire — plated in some 800 kilograms of pure gold
+            </p>
+        </div>
+        <img src="images/kashivishwa.png" class="favourite-place-card-image" />
+    </div>
+    <div class="favourite-place-card-container" style="cursor: pointer;" target="_self" id="btn-4">
+        <div style="margin-right:10px">
+            <h1 class="favourite-place-card-heading">New kashi Vishwanath Temple  <input class="checkbox" type="checkbox" id="Newkashi" name="twoDay" value="Newkashi" checked></h1>
+            <p class="favourite-place-card-description">
+                The New Vishwanath Temple is every pious man's go-to destination to feel overwhelmed by the presence and power of the great Lord Shiva.
+            </p>
+        </div>
+        <img src="images/newkashi.png" class="favourite-place-card-image" />
+    </div>
+    <div class="favourite-place-card-container" style="cursor: pointer;" target="_self" id="btn-5">
+        <div style="margin-right:10px">
+            <h1 class="favourite-place-card-heading">RamNagar Fort <input class="checkbox" type="checkbox" id="Ramnagar" name="twoDay" value="Ramnagar" checked></h1>
+            <p class="favourite-place-card-description">
+                There are few destinations in India without a fort, and Varanasi is no exception. About 14 kilometers from the city center, we'll find Ramnagar Fort.
+            </p>
+        </div>
+        <img src="images/kedarghat.png" class="favourite-place-card-image" />
+    </div>
+
+</div>
+
+<!-- Top Attraction Ends here -->
+
+<div class="container">
+    <hr style="border-width: 1px;">
+    <div class="buttons">
+        <button id="edit" class="del">Edit and Recalculate</button>
+        <button id="expand-collapse" class="del">👆</button>
+    </div>
+    <p id="navDetail" class="del"></p>
+    <div class="scroller" id="change">
+    <div id="directionsPanel"></div>
+        <!-- <div class="element">
+            <a href="#">
+                <img src="https://picsum.photos/seed/picsum/60/60" alt="1" >
+                <p>Obj 1</p>
+            </a>
+        </div>
+        <div class="element">
+            <a href="#">
+                <img src="https://picsum.photos/seed/picsum/60/60" alt="1" >
+                <p>Obj 2</p>
+            </a>
+        </div> -->
+    </div>
+
+    <div class="control1"> 
+        <div class="control-element1" id="foodBtn"><a href="#"> <img src="images/food2.png" alt="Back To Dashboard"> </a> </div>     
+        <div class="control-element1" id="shoppingBtn"><a href="#"> <img src="images/shopping2.png" alt="Search"> </a> </div>
+        <div class="control-element1" id="touristBtn"><a href="#"> <img src="images/tourists2.png" alt="Go To"> </a> </div>
+        <div class="control-element1" id="cityTourBtn"><a href="#"> <img src="images/cityTour2.png" alt="Draw Path"> </a> </div>
+        <div class="control-element1" id="healthBtn"><a href="#"> <img src="images/health2.png" alt="Profile"> </a> </div>
+    </div>
+</div>
+</div>
+
+
+<script src="javascript/dashboard.js"></script>
+<script src="javascript/twoDay.js"></script>
+<script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDbagPOfTmIv_byu0S5uX_1EPtWH2E67s&callback=initMap&libraries=&v=weekly"
+async
+></script>
+</body>
+</html>

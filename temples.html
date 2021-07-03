@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/topAttraction.css">
+</head>
+<body>
+    <div class="big-container">
+        <div class="title"><h2>Varanasi Tourism Services</h2></div>
+
+<!-- Top attraction page starts here... -->
+
+<div class="top-attraction ">
+    <div class="favourite-place-card-container" style="cursor: pointer;" id="btn-1">
+        <div style="margin-right:10px">
+            <h1 class="favourite-place-card-heading">Shri Kashi Vishwanath Temple</h1>
+            <p class="favourite-place-card-description">
+                The impressive structure, dedicated to the Hindu deity Shiva, has earned the nickname "The Golden Temple" for its striking spire — plated in some 800 kilograms of pure gold
+            </p>
+        </div>
+        <img src="images/kashivishwa.png" class="favourite-place-card-image" />
+    </div>
+    <div class="favourite-place-card-container" style="cursor: pointer;" target="_self"  id="btn-2">
+        <div style="margin-right:10px">
+            <h1 class="favourite-place-card-heading">New kashi Vishwanath Temple</h1>
+            <p class="favourite-place-card-description">
+                The New Vishwanath Temple is every pious man's go-to destination to feel overwhelmed by the presence and power of the great Lord Shiva.
+            </p>
+        </div>
+        <img src="images/newkashi.png" class="favourite-place-card-image" />
+    </div>
+    <div class="favourite-place-card-container" style="cursor: pointer;" target="_self"  id="btn-3">
+        <div style="margin-right:10px">
+            <h1 class="favourite-place-card-heading">Sankat Mochan Temple</h1>
+            <p class="favourite-place-card-description">
+                The Sankat Mochan Hanuman Temple is situated by the River Assi and was built in the 1900s by the freedom fighter Pandit Madan Mohan Malviya. It is dedicated to Lord Rama and Hanuman.
+            </p>
+        </div>
+        <img src="images/sankatmochan.png" class="favourite-place-card-image" />
+    </div>
+    <div class="favourite-place-card-container" style="cursor: pointer; margin-bottom:12%" target="_self"  id="btn-4">
+        <div style="margin-right:10px">
+            <h1 class="favourite-place-card-heading">Durga Temple</h1>
+            <p class="favourite-place-card-description">
+                Located near the Durga Ghat on the bank of the River Ganga, Durga Temple was built in the 18th century.
+            </p>
+        </div>
+        <img src="images/durgatemple.png" class="favourite-place-card-image" />
+    </div>
+</div>
+
+<!-- Top Attraction Ends here -->
+
+        <div class="container">
+            <div class="scroller" id="change">
+                <!-- <div class="element">
+                    <a href="#">
+                        <img src="https://picsum.photos/seed/picsum/60/60" alt="1" >
+                        <p>Obj 1</p>
+                    </a>
+                </div>
+                <div class="element">
+                    <a href="#">
+                        <img src="https://picsum.photos/seed/picsum/60/60" alt="1" >
+                        <p>Obj 2</p>
+                    </a>
+                </div> -->
+            </div>
+
+            <div class="control1"> 
+                <div class="control-element1" id="foodBtn"><a href="#"> <img src="images/food2.png" alt="Back To Dashboard"> </a> </div>     
+                <div class="control-element1" id="shoppingBtn"><a href="#"> <img src="images/shopping2.png" alt="Search"> </a> </div>
+                <div class="control-element1" id="touristBtn"><a href="#"> <img src="images/tourists2.png" alt="Go To"> </a> </div>
+                <div class="control-element1" id="cityTourBtn"><a href="#"> <img src="images/cityTour2.png" alt="Draw Path"> </a> </div>
+                <div class="control-element1" id="healthBtn"><a href="#"> <img src="images/health2.png" alt="Profile"> </a> </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="javascript/dashboard.js"></script>
+    <script src="javascript/temples.js"></script>
+</body>
+</html>
